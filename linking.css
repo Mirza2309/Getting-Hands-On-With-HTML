@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --red: #ea4335;
+  --blue: #4285f4;
+  --green: #34a853;
+  --yellow: #fbbc04;
+  --black: #656c73;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(./blurry-gradient-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  height: 75vh;
+  width: 70vw;
+  padding: 20px;
+  background: rgba(30, 17, 103, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(59, 6, 234, 0.3);
+}
+
+.contents {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contents > h1{
+  color: #009dff;
+}
+
+.contents ul {
+  padding-left: 40px;
+  color: #fff;
+}
+
+.contents li{
+  margin: 20px 0;
+}
+
+.contents span{
+  color: #ffd900;
+  font-weight: 700;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .photoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 400px;
+  }
+  .photoBox img {
+    aspect-ratio: 1/1;
+    width: 400px;
+  }
+
+
+  #back1{
+    background-color: #1d025c;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 50%);
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #back2{
+    background-color: #281fa8;
+    clip-path: polygon(0 100%, 69% 0, 100% 0, 49% 100%);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+  }

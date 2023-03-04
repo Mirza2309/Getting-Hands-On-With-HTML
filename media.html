@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="buttons.css">
+    <script src="https://kit.fontawesome.com/f334ead1fc.js" crossorigin="anonymous"></script>
+    <title>Media</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="contents">
+          <h1 class="heading">What's Movin'</h1>
+          <h2 class="video-head">Video Tag</h2>
+          <div class="def">
+            <p>
+              The <span>controls</span> attribute adds video controls, like
+              play, pause, and volume.
+            </p>
+            <p>
+              It is a good idea to always include <span>width</span> and
+              <span>height</span> attributes.
+            </p>
+            <p>
+              If <span>height</span> and <span>width</span> are not set, the
+              page might flicker while the video loads.
+            </p>
+            <p>
+              The <span>&lt;source /&gt;</span> element allows you to specify alternative
+              video files which the browser may choose from.
+            </p>
+          </div>
+        </div>
+        <div class="video">
+          <div class="videoBox">
+            <video src="./puss.mp4" autoplay muted loop width="500px"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="back">
+        <video src="./background.mp4" autoplay loop muted width="1536px"></video>
+    </div> -->
+    <div class="navigation">
+      <div class="backward">
+          <button class="prev"><a href="images.html"><i class="fas fa-arrow-left"></i></a></button>
+      </div>
+      <div class="forward">
+          <button class="next"><a href="media2.html"><i class="fas fa-arrow-right"></i></a></button>
+      </div>
+    </div>
+  </body>
+</html>

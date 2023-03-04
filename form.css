@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --red: #ea4335;
+  --blue: #4285f4;
+  --green: #34a853;
+  --yellow: #fbbc04;
+  --black: #656c73;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #180132;
+}
+
+.container {
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 1%;
+  height: 75vh;
+  width: 60vw;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(59, 6, 234, 0.3);
+}
+
+.contents {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  color: white;
+}
+.contents p{
+  height: auto;
+}
+
+.contents ul{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contents li{
+  font-weight: 500;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -20;
+    animation: rotate 30s linear infinite;
+}
+
+.shape{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    mix-blend-mode: lighten;
+    filter: blur(24px);
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#shape1{
+    background-color: #ea4335;
+}
+
+#shape2{
+    background-color: #fbbc04;
+}
+
+#shape3{
+    background-color: #34a853;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 380px;
+}
+.imageBox img {
+  aspect-ratio: 1/1;
+  width: 380px;
+}
+
+.navigation img{
+  height: 100px;
+  aspect-ratio: 1/1;
+}
